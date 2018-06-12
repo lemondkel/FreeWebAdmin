@@ -10,8 +10,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header logo={logo} />
-        <LeftMenu />
-        <Contents defaultMenu="Cleanings" />
+        <LeftMenu currentMenu="Cleanings" />
+        <Contents currentMenu="Cleanings" />
       </div>
     );
   }

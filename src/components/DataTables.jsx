@@ -1,293 +1,118 @@
 /*
  * Created by dkel on 2018-06-09.
  */
-import React, {Component} from 'react';
-import {DataTable} from 'react-data-components';
-import axios from 'axios';
+import React, {Component} from "react";
+import axios from "axios";
+// import Handsontable from 'handsontable';
+// import 'handsontable/dist/handsontable.min.css'
+import HotTable from "react-handsontable";
 
 class Contents extends Component {
 
 	state = {
-		columnList: []
+		columnList: [],
+		rowList: []
 	};
 
 	constructor(props) {
 		super(props);
 
-		/*	this.renderMapUrl = this.renderMapUrl.bind(this);
-		 this.clickItem = this.clickItem.bind(this);*/
-		axios.get('http://localhost:3001/Cleanings')
-			.then(response => {
-				console.log(response);
-				response.data[0].render = this.renderMapUrl;
-				this.setState({
-					columnList: response.data
-				});
-			}) // SUCCESS
-			.catch(response => {
-				console.log(response);
-			}); // ERROR
+		const self = this;
+
+		document.addEventListener("DOMContentLoaded", function () {
+
+			axios.get('http://localhost:3001/Cleanings')
+				.then(response => {
+					console.log(response);
+
+					// visible 이 true 인 칼럼만 보여준다.
+					// google sheet - 주황색 표시 칼럼.
+					response.data = response.data.filter(function (val) {
+						return val.visible;
+					});
+
+					response.data[0].render = this.renderMapUrl;
+					self.setState({
+						columnList: response.data
+					});
+
+					axios.get('http://localhost:3001/_Cleanings')
+						.then(response => {
+							console.log(response);
+							self.setState({
+								rowList: response.data
+							});
+
+						}) // SUCCESS
+						.catch(response => {
+							console.log(response);
+						}); // ERROR
+
+					// const example1 = document.getElementById('example1');
+					/*
+					 new Handsontable(example1, {
+					 data: data,
+					 columns: self.state.columnList,
+					 colHeaders: self.state.columnList,
+					 dropdownMenu: true,
+					 filters: true,
+					 stretchH: 'all',
+					 autoWrapRow: true,
+					 maxRows: 10,
+					 manualRowResize: true,
+					 manualColumnResize: true,
+					 manualRowMove: true,
+					 manualColumnMove: true,
+					 columnSorting: true,
+					 sortIndicator: true,
+					 autoColumnSize: {
+					 samplingRatio: 23
+					 },
+					 height: "200",
+					 contextMenu: true,
+					 hiddenColumns: true
+					 });
+					 */
+				}) // SUCCESS
+				.catch(response => {
+					console.log(response);
+				}); // ERROR
+		});
 	}
 
-	/** @namespace ColumnList.Cleanings */
 	render() {
 
-		const data = [
-			{
-				id: 'gkwkdlawoh',
-				name: 'Lee',
-				customer_id: 'gkwkdlawoh',
-				city: 'Suwon',
-				district: 'Gyeonggi-do',
-				detailed_address: '321-32',
-				nationality: 'South Korea',
-				contact: '010-3227-4617',
-				date: '2016-02-17',
-				home_type: 'APT',
-				size: 70,
-				customer_type: 'B2B',
-				cleaning_type: '정기',
-				status_of_subscription: '2/17',
-				tool: 'with tool',
-				rank_of_cleaning: 3,
-				bathroom_cleaning: 'O',
-				kitchen_cleaning: 'X',
-				msc_cleaning: 'X',
-				window_cleaning: 'X',
-				balcony_cleaning: 'X',
-				refrigerator_cleaning: 'X',
-				ironing_cleaning: 'X',
-				ceiling_cleaning: 'X',
-				cleaning_status: 'Not yet',
-				payment_status: 'paid',
-				transaction_id: '01237468',
-				consultant_status: 'matched',
-				payment: 280000,
-				price: 320000,
-				discount: 40000,
-				used_point: 20000,
-				discounted_promotion: 20000,
-				promo_content: '10-Subscription(10%)',
-				status_of_start: 'late',
-				total_expected_duration: 6,
-				expected_duration: 3,
-				total_real_duration: 0,
-				real_duration: 0,
-				each_consultant_salary: 100000,
-				total_consultant_salary: 200000,
-				payment_type: 'VA',
-				using_app: 'App',
-				tip_for_each: 10000,
-				total_tip: 20000,
-				request_detail: 'Focus on bathroom',
-				number_of_consultants: 2,
-				consultants_name: 'Sri, Ira',
-				cleaning_rate_done: 'Y',
-				cleaning_rate: 4,
-				cleaning_feedback1: '청소도구가 불만이에요',
-				cleaning_feedback2: '진공청소기 상태가 좋아보이지 않았어요',
-				insert_date: '2052018',
-				bed_rooms: 1,
-				bath_rooms: 1,
-			},
-			{
-				id: 'gkwkdlawoa',
-				name: 'Lee',
-				customer_id: 'gkwkdlawoh',
-				city: 'Suwon',
-				district: 'Gyeonggi-do',
-				detailed_address: '321-32',
-				nationality: 'South Korea',
-				contact: '010-3227-4617',
-				date: '2016-02-17',
-				home_type: 'APT',
-				size: 70,
-				customer_type: 'B2B',
-				cleaning_type: '정기',
-				status_of_subscription: '2/17',
-				tool: 'with tool',
-				rank_of_cleaning: 3,
-				bathroom_cleaning: 'O',
-				kitchen_cleaning: 'X',
-				msc_cleaning: 'X',
-				window_cleaning: 'X',
-				balcony_cleaning: 'X',
-				refrigerator_cleaning: 'X',
-				ironing_cleaning: 'X',
-				ceiling_cleaning: 'X',
-				cleaning_status: 'Not yet',
-				payment_status: 'paid',
-				transaction_id: '01237468',
-				consultant_status: 'matched',
-				payment: 280000,
-				price: 320000,
-				discount: 40000,
-				used_point: 20000,
-				discounted_promotion: 20000,
-				promo_content: '10-Subscription(10%)',
-				status_of_start: 'late',
-				total_expected_duration: 6,
-				expected_duration: 3,
-				total_real_duration: 0,
-				real_duration: 0,
-				each_consultant_salary: 100000,
-				total_consultant_salary: 200000,
-				payment_type: 'VA',
-				using_app: 'App',
-				tip_for_each: 10000,
-				total_tip: 20000,
-				request_detail: 'Focus on bathroom',
-				number_of_consultants: 2,
-				consultants_name: 'Sri, Ira',
-				cleaning_rate_done: 'Y',
-				cleaning_rate: 4,
-				cleaning_feedback1: '청소도구가 불만이에요',
-				cleaning_feedback2: '진공청소기 상태가 좋아보이지 않았어요',
-				insert_date: '2052018',
-				bed_rooms: 1,
-				bath_rooms: 1,
-			},
-			{
-				id: 'gkwkdlawod',
-				name: 'Lee',
-				customer_id: 'gkwkdlawoh',
-				city: 'Suwon',
-				district: 'Gyeonggi-do',
-				detailed_address: '321-32',
-				nationality: 'South Korea',
-				contact: '010-3227-4617',
-				date: '2016-02-17',
-				home_type: 'APT',
-				size: 70,
-				customer_type: 'B2B',
-				cleaning_type: '정기',
-				status_of_subscription: '2/17',
-				tool: 'with tool',
-				rank_of_cleaning: 3,
-				bathroom_cleaning: 'O',
-				kitchen_cleaning: 'X',
-				msc_cleaning: 'X',
-				window_cleaning: 'X',
-				balcony_cleaning: 'X',
-				refrigerator_cleaning: 'X',
-				ironing_cleaning: 'X',
-				ceiling_cleaning: 'X',
-				cleaning_status: 'Not yet',
-				payment_status: 'paid',
-				transaction_id: '01237468',
-				consultant_status: 'matched',
-				payment: 280000,
-				price: 320000,
-				discount: 40000,
-				used_point: 20000,
-				discounted_promotion: 20000,
-				promo_content: '10-Subscription(10%)',
-				status_of_start: 'late',
-				total_expected_duration: 6,
-				expected_duration: 3,
-				total_real_duration: 0,
-				real_duration: 0,
-				each_consultant_salary: 100000,
-				total_consultant_salary: 200000,
-				payment_type: 'VA',
-				using_app: 'App',
-				tip_for_each: 10000,
-				total_tip: 20000,
-				request_detail: 'Focus on bathroom',
-				number_of_consultants: 2,
-				consultants_name: 'Sri, Ira',
-				cleaning_rate_done: 'Y',
-				cleaning_rate: 4,
-				cleaning_feedback1: '청소도구가 불만이에요',
-				cleaning_feedback2: '진공청소기 상태가 좋아보이지 않았어요',
-				insert_date: '2052018',
-				bed_rooms: 1,
-				bath_rooms: 1,
-			},
-			{
-				id: 'l2jong',
-				name: 'Lee',
-				customer_id: 'gkwkdlawoh',
-				city: 'Suwon',
-				district: 'Gyeonggi-do',
-				detailed_address: '321-32',
-				nationality: 'South Korea',
-				contact: '010-3227-4617',
-				date: '2016-02-17',
-				home_type: 'APT',
-				size: 70,
-				customer_type: 'B2B',
-				cleaning_type: '정기',
-				status_of_subscription: '2/17',
-				tool: 'with tool',
-				rank_of_cleaning: 3,
-				bathroom_cleaning: 'O',
-				kitchen_cleaning: 'X',
-				msc_cleaning: 'X',
-				window_cleaning: 'X',
-				balcony_cleaning: 'X',
-				refrigerator_cleaning: 'X',
-				ironing_cleaning: 'X',
-				ceiling_cleaning: 'X',
-				cleaning_status: 'Not yet',
-				payment_status: 'paid',
-				transaction_id: '01237468',
-				consultant_status: 'matched',
-				payment: 280000,
-				price: 320000,
-				discount: 40000,
-				used_point: 20000,
-				discounted_promotion: 20000,
-				promo_content: '10-Subscription(10%)',
-				status_of_start: 'late',
-				total_expected_duration: 6,
-				expected_duration: 3,
-				total_real_duration: 0,
-				real_duration: 0,
-				each_consultant_salary: 100000,
-				total_consultant_salary: 200000,
-				payment_type: 'VA',
-				using_app: 'App',
-				tip_for_each: 10000,
-				total_tip: 20000,
-				request_detail: 'Focus on bathroom',
-				number_of_consultants: 2,
-				consultants_name: 'Sri, Ira',
-				cleaning_rate_done: 'Y',
-				cleaning_rate: 4,
-				cleaning_feedback1: '청소도구가 불만이에요',
-				cleaning_feedback2: '진공청소기 상태가 좋아보이지 않았어요',
-				insert_date: '2052018',
-				bed_rooms: 1,
-				bath_rooms: 1,
-			},
-
-			// It also supports arrays
-			// [ 'name value', 'city value', 'address value', 'phone value' ]
-		];
+		const autoColumnSizeOption = {samplingRatio: 23};
 
 		return (
-			<section className="right">
-				<h3 className="title">{this.props.defaultMenu}</h3>
-				<DataTable
-					keys={"id"}
-					columns={this.state.columnList}
-					initialData={data}
-					initialPageLength={5}
-					initialSortBy={{prop: "id", order: 'descending'}}
-					table=""
-				/>
+			<section className="right-layout">
+				<h3 className="title">{this.props.currentMenu}</h3>
+				<HotTable data={this.state.rowList}
+						  columns={this.state.columnList}
+						  colHeaders={this.state.columnList}
+						  dropdownMenu="true"
+						  filters="true"
+						  stretchH='all'
+						  autoWrapRow="true"
+						  maxRows="20"
+						  manualRowResize="true"
+						  manualColumnResize="true"
+						  manualRowMove="true"
+						  manualColumnMove="true"
+						  columnSorting="true"
+						  sortIndicator="true"
+						  autoColumnSize={autoColumnSizeOption}
+						  height="460"
+						  contextMenu="true"
+						  hiddenColumns="true"/>
 			</section>
 		);
 	}
 
 	renderMapUrl = (val, row) => (
-		<a /*onClick={this.clickItem('gigigi')}*/>{val}</a>
+		<a>{val}</a>
 	);
 
-	/*clickItem = (value) => {
-	 alert(value);
-	 }*/
 }
 
 export default Contents;

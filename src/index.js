@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <App currentMenu="Cleanings" />
   </BrowserRouter>,
   document.getElementById('root'),
 );

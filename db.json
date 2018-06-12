@@ -1,280 +1,391 @@
 {
   "Cleanings": [
-    {
-      "title": "ID",
-      "prop": "id",
-      "visible": true
-    },
-    {
-      "title": "Name",
-      "prop": "name",
-      "visible": true
-    },
-    {
-      "title": "Customer ID",
-      "prop": "customer_id",
-      "visible": false
-    },
-    {
-      "title": "City",
-      "prop": "city",
-      "visible": true
-    },
-    {
-      "title": "District",
-      "prop": "district",
-      "visible": true
-    },
-    {
-      "title": "Detailed address",
-      "prop": "detailed_address",
-      "visible": true
-    },
-    {
-      "title": "Nationality",
-      "prop": "nationality",
-      "visible": true
-    },
-    {
-      "title": "Contact",
-      "prop": "contact",
-      "visible": false
-    },
-    {
-      "title": "Date",
-      "prop": "date",
-      "visible": true
-    },
-    {
-      "title": "Home type",
-      "prop": "home_type",
-      "visible": true
-    },
-    {
-      "title": "Size",
-      "prop": "size",
-      "visible": true
-    },
-    {
-      "title": "customer type",
-      "prop": "customer_type",
-      "visible": false
-    },
-    {
-      "title": "cleaning type",
-      "prop": "cleaning_type",
-      "visible": true
-    },
-    {
-      "title": "status of subscription",
-      "prop": "status_of_subscription",
-      "visible": true
-    },
-    {
-      "title": "With tool / No tool",
-      "prop": "tool",
-      "visible": true
-    },
-    {
-      "title": "rank of cleaning",
-      "prop": "rank_of_cleaning",
-      "visible": false
-    },
-    {
-      "title": "Special Cleaning(bathroom)",
-      "prop": "bathroom_cleaning",
-      "visible": false
-    },
-    {
-      "title": "Special Cleaning(kitchen)",
-      "prop": "kitchen_cleaning",
-      "visible": false
-    },
-    {
-      "title": "Special Cleaning(MSC)",
-      "prop": "msc_cleaning",
-      "visible": false
-    },
-    {
-      "title": "Special Cleaning(window)",
-      "prop": "window_cleaning",
-      "visible": false
-    },
-    {
-      "title": "Special Cleaning(balcony)",
-      "prop": "balcony_cleaning",
-      "visible": false
-    },
-    {
-      "title": "Special Cleaning(Refrigerator)",
-      "prop": "refrigerator_cleaning",
-      "visible": false
-    },
-    {
-      "title": "Special Cleaning(Ironing)",
-      "prop": "ironing_cleaning",
-      "visible": false
-    },
-    {
-      "title": "Special Cleaning(ceiling)",
-      "prop": "ceiling_cleaning",
-      "visible": false
-    },
-    {
-      "title": "Cleaning Status",
-      "prop": "cleaning_status",
-      "visible": false
-    },
-    {
-      "title": "Payment Status",
-      "prop": "payment_status",
-      "visible": false
-    },
-    {
-      "title": "Transaction ID",
-      "prop": "transaction_id",
-      "visible": false
-    },
-    {
-      "title": "Consultant Status",
-      "prop": "consultant_status",
-      "visible": true
-    },
-    {
-      "title": "Payment",
-      "prop": "payment",
-      "visible": true
-    },
-    {
-      "title": "Price",
-      "prop": "price",
-      "visible": false
-    },
-    {
-      "title": "Discount",
-      "prop": "discount",
-      "visible": false
-    },
-    {
-      "title": "Used point",
-      "prop": "used_point",
-      "visible": false
-    },
-    {
-      "title": "Discounted Promotion",
-      "prop": "discounted_promotion",
-      "visible": false
-    },
-    {
-      "title": "Promo content",
-      "prop": "promo_content",
-      "visible": false
-    },
-    {
-      "title": "Status of start",
-      "prop": "status_of_start",
-      "visible": false
-    },
-    {
-      "title": "cleaning duration(total expected)",
-      "prop": "total_expected_duration",
-      "visible": false
-    },
-    {
-      "title": "cleaning duration(expected)",
-      "prop": "expected_duration",
-      "visible": false
-    },
-    {
-      "title": "cleaning duration(total real)",
-      "prop": "total_real_duration",
-      "visible": false
-    },
-    {
-      "title": "cleaning duration(real)",
-      "prop": "real_duration",
-      "visible": false
-    },
-    {
-      "title": "each consultant salary",
-      "prop": "each_consultant_salary",
-      "visible": false
-    },
-    {
-      "title": "total consultant salary",
-      "prop": "total_consultant_salary",
-      "visible": false
-    },
-    {
-      "title": "Payment type",
-      "prop": "payment_type",
-      "visible": false
-    },
-    {
-      "title": "Using App",
-      "prop": "using_app",
-      "visible": false
-    },
-    {
-      "title": "Tip for each",
-      "prop": "tip_for_each",
-      "visible": false
-    },
-    {
-      "title": "total Tip",
-      "prop": "total_tip",
-      "visible": false
-    },
-    {
-      "title": "Request detail",
-      "prop": "request_detail",
-      "visible": false
-    },
-    {
-      "title": "Number of consultants",
-      "prop": "number_of_consultants",
-      "visible": false
-    },
-    {
-      "title": "Consultants Name",
-      "prop": "consultants_name",
-      "visible": true
-    },
-    {
-      "title": "cleaning rate done",
-      "prop": "cleaning_rate_done",
-      "visible": false
-    },
-    {
-      "title": "cleaning rate",
-      "prop": "cleaning_rate",
-      "visible": false
-    },
-    {
-      "title": "cleaning feedback1",
-      "prop": "cleaning_feedback1",
-      "visible": false
-    },
-    {
-      "title": "cleaning feedback2",
-      "prop": "cleaning_feedback2",
-      "visible": false
-    },
-    {
-      "title": "Insert data",
-      "prop": "insert_date",
-      "visible": false
-    },
-    {
-      "title": "Bed rooms",
-      "prop": "bed_rooms",
-      "visible": false
-    },
-    {
-      "title": "Bath rooms",
-      "prop": "bath_rooms",
-      "visible": false
-    }
+	{
+	  "title": "ID",
+	  "prop": "id",
+	  "visible": true,
+	  "data": "id",
+	  "type": "text"
+	},
+	{
+	  "title": "Name",
+	  "prop": "name",
+	  "visible": true,
+	  "data": "name",
+	  "type": "text"
+	},
+	{
+	  "title": "Customer ID",
+	  "prop": "customer_id",
+	  "visible": false,
+	  "data": "customer_id",
+	  "type": "text"
+	},
+	{
+	  "title": "City",
+	  "prop": "city",
+	  "visible": true,
+	  "data": "city",
+	  "type": "text"
+	},
+	{
+	  "title": "District",
+	  "prop": "district",
+	  "visible": true,
+	  "data": "district",
+	  "type": "text"
+	},
+	{
+	  "title": "Detailed address",
+	  "prop": "detailed_address",
+	  "visible": true,
+	  "data": "detailed_address",
+	  "type": "text"
+	},
+	{
+	  "title": "Nationality",
+	  "prop": "nationality",
+	  "visible": true,
+	  "data": "nationality",
+	  "type": "text"
+	},
+	{
+	  "title": "Contact",
+	  "prop": "contact",
+	  "visible": false,
+	  "data": "contact",
+	  "type": "text"
+	},
+	{
+	  "title": "Date",
+	  "prop": "date",
+	  "visible": true,
+	  "data": "date",
+	  "type": "date",
+	  "dateFormat": "YYYY-MM-DD"
+	},
+	{
+	  "title": "Home type",
+	  "prop": "home_type",
+	  "visible": true,
+	  "data": "home_type",
+	  "type": "text"
+	},
+	{
+	  "title": "Size",
+	  "prop": "size",
+	  "visible": true,
+	  "data": "size",
+	  "type": "numeric"
+	},
+	{
+	  "title": "customer type",
+	  "prop": "customer_type",
+	  "visible": false,
+	  "data": "customer_type",
+	  "type": "text"
+	},
+	{
+	  "title": "cleaning type",
+	  "prop": "cleaning_type",
+	  "visible": true,
+	  "data": "cleaning_type",
+	  "type": "text"
+	},
+	{
+	  "title": "status of subscription",
+	  "prop": "status_of_subscription",
+	  "visible": true,
+	  "data": "status_of_subscription",
+	  "type": "text"
+	},
+	{
+	  "title": "With tool / No tool",
+	  "prop": "tool",
+	  "visible": true,
+	  "data": "tool",
+	  "type": "text"
+	},
+	{
+	  "title": "rank of cleaning",
+	  "prop": "rank_of_cleaning",
+	  "visible": false,
+	  "data": "rank_of_cleaning",
+	  "type": "text"
+	},
+	{
+	  "title": "Special Cleaning(bathroom)",
+	  "prop": "bathroom_cleaning",
+	  "visible": false,
+	  "data": "bathroom_cleaning",
+	  "type": "text"
+	},
+	{
+	  "title": "Special Cleaning(kitchen)",
+	  "prop": "kitchen_cleaning",
+	  "visible": false,
+	  "data": "kitchen_cleaning",
+	  "type": "text"
+	},
+	{
+	  "title": "Special Cleaning(MSC)",
+	  "prop": "msc_cleaning",
+	  "visible": false,
+	  "data": "msc_cleaning",
+	  "type": "text"
+	},
+	{
+	  "title": "Special Cleaning(window)",
+	  "prop": "window_cleaning",
+	  "visible": false,
+	  "data": "window_cleaning",
+	  "type": "text"
+	},
+	{
+	  "title": "Special Cleaning(balcony)",
+	  "prop": "balcony_cleaning",
+	  "visible": false,
+	  "data": "balcony_cleaning",
+	  "type": "text"
+	},
+	{
+	  "title": "Special Cleaning(Refrigerator)",
+	  "prop": "refrigerator_cleaning",
+	  "visible": false,
+	  "data": "refrigerator_cleaning",
+	  "type": "text"
+	},
+	{
+	  "title": "Special Cleaning(Ironing)",
+	  "prop": "ironing_cleaning",
+	  "visible": false,
+	  "data": "ironing_cleaning",
+	  "type": "text"
+	},
+	{
+	  "title": "Special Cleaning(ceiling)",
+	  "prop": "ceiling_cleaning",
+	  "visible": false,
+	  "data": "ceiling_cleaning",
+	  "type": "text"
+	},
+	{
+	  "title": "Cleaning Status",
+	  "prop": "cleaning_status",
+	  "visible": false,
+	  "data": "cleaning_status",
+	  "type": "text"
+	},
+	{
+	  "title": "Payment Status",
+	  "prop": "payment_status",
+	  "visible": false,
+	  "data": "payment_status",
+	  "type": "text"
+	},
+	{
+	  "title": "Transaction ID",
+	  "prop": "transaction_id",
+	  "visible": false,
+	  "data": "transaction_id",
+	  "type": "text"
+	},
+	{
+	  "title": "Consultant Status",
+	  "prop": "consultant_status",
+	  "visible": true,
+	  "data": "consultant_status",
+	  "type": "text"
+	},
+	{
+	  "title": "Payment",
+	  "prop": "payment",
+	  "visible": true,
+	  "data": "payment",
+	  "type": "numeric"
+	},
+	{
+	  "title": "Price",
+	  "prop": "price",
+	  "visible": false,
+	  "data": "price",
+	  "type": "numeric"
+	},
+	{
+	  "title": "Discount",
+	  "prop": "discount",
+	  "visible": false,
+	  "data": "discount",
+	  "type": "numeric"
+	},
+	{
+	  "title": "Used point",
+	  "prop": "used_point",
+	  "visible": false,
+	  "data": "used_point",
+	  "type": "numeric"
+	},
+	{
+	  "title": "Discounted Promotion",
+	  "prop": "discounted_promotion",
+	  "visible": false,
+	  "data": "discounted_promotion",
+	  "type": "text"
+	},
+	{
+	  "title": "Promo content",
+	  "prop": "promo_content",
+	  "visible": false,
+	  "data": "promo_content",
+	  "type": "text"
+	},
+	{
+	  "title": "Status of start",
+	  "prop": "status_of_start",
+	  "visible": false,
+	  "data": "status_of_start",
+	  "type": "text"
+	},
+	{
+	  "title": "cleaning duration(total expected)",
+	  "prop": "total_expected_duration",
+	  "visible": false,
+	  "data": "total_expected_duration",
+	  "type": "numeric"
+	},
+	{
+	  "title": "cleaning duration(expected)",
+	  "prop": "expected_duration",
+	  "visible": false,
+	  "data": "expected_duration",
+	  "type": "numeric"
+	},
+	{
+	  "title": "cleaning duration(total real)",
+	  "prop": "total_real_duration",
+	  "visible": false,
+	  "data": "total_real_duration",
+	  "type": "numeric"
+	},
+	{
+	  "title": "cleaning duration(real)",
+	  "prop": "real_duration",
+	  "visible": false,
+	  "data": "real_duration",
+	  "type": "numeric"
+	},
+	{
+	  "title": "each consultant salary",
+	  "prop": "each_consultant_salary",
+	  "visible": false,
+	  "data": "each_consultant_salary",
+	  "type": "numeric"
+	},
+	{
+	  "title": "total consultant salary",
+	  "prop": "total_consultant_salary",
+	  "visible": false,
+	  "data": "total_consultant_salary",
+	  "type": "numeric"
+	},
+	{
+	  "title": "Payment type",
+	  "prop": "payment_type",
+	  "visible": false,
+	  "data": "payment_type",
+	  "type": "text"
+	},
+	{
+	  "title": "Using App",
+	  "prop": "using_app",
+	  "visible": false,
+	  "data": "using_app",
+	  "type": "text"
+	},
+	{
+	  "title": "Tip for each",
+	  "prop": "tip_for_each",
+	  "visible": false,
+	  "data": "tip_for_each",
+	  "type": "numeric"
+	},
+	{
+	  "title": "total Tip",
+	  "prop": "total_tip",
+	  "visible": false,
+	  "data": "total_tip",
+	  "type": "numeric"
+	},
+	{
+	  "title": "Request detail",
+	  "prop": "request_detail",
+	  "visible": false,
+	  "data": "request_detail",
+	  "type": "text"
+	},
+	{
+	  "title": "Number of consultants",
+	  "prop": "number_of_consultants",
+	  "visible": false,
+	  "data": "number_of_consultants",
+	  "type": "numeric"
+	},
+	{
+	  "title": "Consultants Name",
+	  "prop": "consultants_name",
+	  "visible": true,
+	  "data": "consultants_name",
+	  "type": "text"
+	},
+	{
+	  "title": "cleaning rate done",
+	  "prop": "cleaning_rate_done",
+	  "visible": false,
+	  "data": "cleaning_rate_done",
+	  "type": "text"
+	},
+	{
+	  "title": "cleaning rate",
+	  "prop": "cleaning_rate",
+	  "visible": false,
+	  "data": "cleaning_rate",
+	  "type": "numeric"
+	},
+	{
+	  "title": "cleaning feedback1",
+	  "prop": "cleaning_feedback1",
+	  "visible": false,
+	  "data": "cleaning_feedback1",
+	  "type": "text"
+	},
+	{
+	  "title": "cleaning feedback2",
+	  "prop": "cleaning_feedback2",
+	  "visible": false,
+	  "data": "cleaning_feedback2",
+	  "type": "text"
+	},
+	{
+	  "title": "Insert data",
+	  "prop": "insert_date",
+	  "visible": false,
+	  "data": "insert_date",
+	  "type": "text"
+	},
+	{
+	  "title": "Bed rooms",
+	  "prop": "bed_rooms",
+	  "visible": false,
+	  "data": "bed_rooms",
+	  "type": "numeric"
+	},
+	{
+	  "title": "Bath rooms",
+	  "prop": "bath_rooms",
+	  "visible": false,
+	  "data": "bath_rooms",
+	  "type": "numeric"
+	}
   ],
   "Need_To_Be_Approved": [
 	{
@@ -570,7 +681,7 @@
 	  "title": "SKCK",
 	  "prop": "skck",
 	  "visible": false
-	},,
+	},
 	{
 	  "title": "NIK",
 	  "prop": "nik",
@@ -580,7 +691,8 @@
 	  "title": "Gender",
 	  "prop": "gender",
 	  "visible": true
-	},{
+	},
+	{
 	  "title": "Province",
 	  "prop": "province",
 	  "visible": false
@@ -649,6 +761,236 @@
 	  "title": "phone status",
 	  "prop": "phone status",
 	  "visible": true
+	}
+  ],
+  "_Cleanings": [
+	{
+	  "id": "gkwkdlawoa",
+	  "name": "Lee",
+	  "customer_id": "gkwkdlawoh",
+	  "city": "Suwon",
+	  "district": "Gyeonggi-do",
+	  "detailed_address": "321-32",
+	  "nationality": "South Korea",
+	  "contact": "010-3227-4617",
+	  "date": "2017-06-06",
+	  "home_type": "APT",
+	  "size": 70,
+	  "customer_type": "B2B",
+	  "cleaning_type": "정기",
+	  "status_of_subscription": "2/17",
+	  "tool": "with tool",
+	  "rank_of_cleaning": 3,
+	  "bathroom_cleaning": "O",
+	  "kitchen_cleaning": "X",
+	  "msc_cleaning": "X",
+	  "window_cleaning": "X",
+	  "balcony_cleaning": "X",
+	  "refrigerator_cleaning": "X",
+	  "ironing_cleaning": "X",
+	  "ceiling_cleaning": "X",
+	  "cleaning_status": "Not yet",
+	  "payment_status": "paid",
+	  "transaction_id": "01237468",
+	  "consultant_status": "matched",
+	  "payment": 280000,
+	  "price": 320000,
+	  "discount": 40000,
+	  "used_point": 20000,
+	  "discounted_promotion": 20000,
+	  "promo_content": "10-Subscription(10%)",
+	  "status_of_start": "late",
+	  "total_expected_duration": 6,
+	  "expected_duration": 3,
+	  "total_real_duration": 0,
+	  "real_duration": 0,
+	  "each_consultant_salary": 100000,
+	  "total_consultant_salary": 200000,
+	  "payment_type": "VA",
+	  "using_app": "App",
+	  "tip_for_each": 10000,
+	  "total_tip": 20000,
+	  "request_detail": "Focus on bathroom",
+	  "number_of_consultants": 2,
+	  "consultants_name": "Sri, Ira",
+	  "cleaning_rate_done": "Y",
+	  "cleaning_rate": 4,
+	  "cleaning_feedback1": "청소도구가 불만이에요",
+	  "cleaning_feedback2": "진공청소기 상태가 좋아보이지 않았어요",
+	  "insert_date": "2052018",
+	  "bed_rooms": 1,
+	  "bath_rooms": 1
+	},
+	{
+	  "id": "leedjlee",
+	  "name": "Lee",
+	  "customer_id": "gkwkdlawoh",
+	  "city": "Suwon",
+	  "district": "Gyeonggi-do",
+	  "detailed_address": "321-32",
+	  "nationality": "South Korea",
+	  "contact": "010-3227-4617",
+	  "date": "2017-06-06",
+	  "home_type": "APT",
+	  "size": 70,
+	  "customer_type": "B2B",
+	  "cleaning_type": "정기",
+	  "status_of_subscription": "2/17",
+	  "tool": "with tool",
+	  "rank_of_cleaning": 3,
+	  "bathroom_cleaning": "O",
+	  "kitchen_cleaning": "X",
+	  "msc_cleaning": "X",
+	  "window_cleaning": "X",
+	  "balcony_cleaning": "X",
+	  "refrigerator_cleaning": "X",
+	  "ironing_cleaning": "X",
+	  "ceiling_cleaning": "X",
+	  "cleaning_status": "Not yet",
+	  "payment_status": "paid",
+	  "transaction_id": "01237468",
+	  "consultant_status": "matched",
+	  "payment": 280000,
+	  "price": 320000,
+	  "discount": 40000,
+	  "used_point": 20000,
+	  "discounted_promotion": 20000,
+	  "promo_content": "10-Subscription(10%)",
+	  "status_of_start": "late",
+	  "total_expected_duration": 6,
+	  "expected_duration": 3,
+	  "total_real_duration": 0,
+	  "real_duration": 0,
+	  "each_consultant_salary": 100000,
+	  "total_consultant_salary": 200000,
+	  "payment_type": "VA",
+	  "using_app": "App",
+	  "tip_for_each": 10000,
+	  "total_tip": 20000,
+	  "request_detail": "Focus on bathroom",
+	  "number_of_consultants": 2,
+	  "consultants_name": "Sri, Ira",
+	  "cleaning_rate_done": "Y",
+	  "cleaning_rate": 4,
+	  "cleaning_feedback1": "청소도구가 불만이에요",
+	  "cleaning_feedback2": "진공청소기 상태가 좋아보이지 않았어요",
+	  "insert_date": "2052018",
+	  "bed_rooms": 1,
+	  "bath_rooms": 1
+	},
+	{
+	  "id": "gkwkdlawoh",
+	  "name": "Lee",
+	  "customer_id": "gkwkdlawoh",
+	  "city": "Suwon",
+	  "district": "Gyeonggi-do",
+	  "detailed_address": "321-32",
+	  "nationality": "South Korea",
+	  "contact": "010-3227-4617",
+	  "date": "2017-06-06",
+	  "home_type": "APT",
+	  "size": 70,
+	  "customer_type": "B2B",
+	  "cleaning_type": "정기",
+	  "status_of_subscription": "2/17",
+	  "tool": "with tool",
+	  "rank_of_cleaning": 3,
+	  "bathroom_cleaning": "O",
+	  "kitchen_cleaning": "X",
+	  "msc_cleaning": "X",
+	  "window_cleaning": "X",
+	  "balcony_cleaning": "X",
+	  "refrigerator_cleaning": "X",
+	  "ironing_cleaning": "X",
+	  "ceiling_cleaning": "X",
+	  "cleaning_status": "Not yet",
+	  "payment_status": "paid",
+	  "transaction_id": "01237468",
+	  "consultant_status": "matched",
+	  "payment": 280000,
+	  "price": 320000,
+	  "discount": 40000,
+	  "used_point": 20000,
+	  "discounted_promotion": 20000,
+	  "promo_content": "10-Subscription(10%)",
+	  "status_of_start": "late",
+	  "total_expected_duration": 6,
+	  "expected_duration": 3,
+	  "total_real_duration": 0,
+	  "real_duration": 0,
+	  "each_consultant_salary": 100000,
+	  "total_consultant_salary": 200000,
+	  "payment_type": "VA",
+	  "using_app": "App",
+	  "tip_for_each": 10000,
+	  "total_tip": 20000,
+	  "request_detail": "Focus on bathroom",
+	  "number_of_consultants": 2,
+	  "consultants_name": "Sri, Ira",
+	  "cleaning_rate_done": "Y",
+	  "cleaning_rate": 4,
+	  "cleaning_feedback1": "청소도구가 불만이에요",
+	  "cleaning_feedback2": "진공청소기 상태가 좋아보이지 않았어요",
+	  "insert_date": "2052018",
+	  "bed_rooms": 1,
+	  "bath_rooms": 1
+	},
+	{
+	  "id": "l2jong",
+	  "name": "Lee",
+	  "customer_id": "gkwkdlawoh",
+	  "city": "Suwon",
+	  "district": "Gyeonggi-do",
+	  "detailed_address": "321-32",
+	  "nationality": "South Korea",
+	  "contact": "010-3227-4617",
+	  "date": "2017-06-06",
+	  "home_type": "APT",
+	  "size": 70,
+	  "customer_type": "B2B",
+	  "cleaning_type": "정기",
+	  "status_of_subscription": "2/17",
+	  "tool": "with tool",
+	  "rank_of_cleaning": 3,
+	  "bathroom_cleaning": "O",
+	  "kitchen_cleaning": "X",
+	  "msc_cleaning": "X",
+	  "window_cleaning": "X",
+	  "balcony_cleaning": "X",
+	  "refrigerator_cleaning": "X",
+	  "ironing_cleaning": "X",
+	  "ceiling_cleaning": "X",
+	  "cleaning_status": "Not yet",
+	  "payment_status": "paid",
+	  "transaction_id": "01237468",
+	  "consultant_status": "matched",
+	  "payment": 280000,
+	  "price": 320000,
+	  "discount": 40000,
+	  "used_point": 20000,
+	  "discounted_promotion": 20000,
+	  "promo_content": "10-Subscription(10%)",
+	  "status_of_start": "late",
+	  "total_expected_duration": 6,
+	  "expected_duration": 3,
+	  "total_real_duration": 0,
+	  "real_duration": 0,
+	  "each_consultant_salary": 100000,
+	  "total_consultant_salary": 200000,
+	  "payment_type": "VA",
+	  "using_app": "App",
+	  "tip_for_each": 10000,
+	  "total_tip": 20000,
+	  "request_detail": "Focus on bathroom",
+	  "number_of_consultants": 2,
+	  "consultants_name": "Sri, Ira",
+	  "cleaning_rate_done": "Y",
+	  "cleaning_rate": 4,
+	  "cleaning_feedback1": "청소도구가 불만이에요",
+	  "cleaning_feedback2": "진공청소기 상태가 좋아보이지 않았어요",
+	  "insert_date": "2052018",
+	  "bed_rooms": 1,
+	  "bath_rooms": 1
 	}
   ]
 }

@@ -8,6 +8,7 @@
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 export const SET_DIFF = 'SET_DIFF';
+export const SET_MENU = 'SET_MENU';
 
 export function increment() {
   return {
@@ -26,4 +27,11 @@ export function setDiff(value) {
     type: SET_DIFF,
     diff: value,
   };
+}
+
+export function setMenu(menuName) {
+  return {
+    type : SET_MENU,
+    menuName : menuName
+  }
 }
